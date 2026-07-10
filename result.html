@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>🎉 Quiz Completed!</h1>
+
+<h2 id="player"></h2>
+
+<h3 id="score"></h3>
+
+<button onclick="window.location='index.html'">
+Take Quiz Again
+</button>
+
+<script>
+const name = localStorage.getItem("playerName");
+const score = localStorage.getItem("score");
+
+document.getElementById("player").innerHTML = "Player: " + name;
+document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+</script>
+
+</body>
+</html>
